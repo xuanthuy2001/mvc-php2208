@@ -13,13 +13,7 @@
       }
       public function index()
     {
-        
-        $header = [
-            'title' => 'Dashboard page'
-        ];
-        $this -> loadHeaders($header);
-         $this -> loadView("dashboard/index_view");
-        $this -> loadFooter();
+        return $this->loadView('roles/index_view');
 
     }
       public function create(){
