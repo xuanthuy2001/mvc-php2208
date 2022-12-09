@@ -16,8 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-3">
-                    <form class="mt-3" method="POST" action="<?=route('login','handleLogin',[
-                        'age'=>20,'name' => 'teo']) ?>" >
+                    <form class="mt-3" method="POST" action="<?=route('login','handleLogin') ?>" >
                         <div class="mb-3">
                           <label class="form-label">Email address</label>
                           <input type="text" name="email" class="form-control" >text

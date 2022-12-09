@@ -41,13 +41,13 @@
         function route($c, $m, $param=[])
         {
             $p = '';
-           if(!empty($param))
-           {
-                foreach($param as $key => $item)
-                {
-                    $p .= empty($p) ? "{$key}={$item}" :"&{$key}={$item}";
-                }
-           }
+            if(!empty($param))
+            {
+                    foreach($param as $key => $item)
+                    {
+                        $p .= empty($p) ? "{$key}={$item}" :"&{$key}={$item}";
+                    }
+            }
             //index.php?c=home&m=index&age=20&name=teo
             // ['age'=>20, 'name'=>'teo']
             return empty($p) ? APP_PATH."?c={$c}&m={$m}" : APP_PATH."?={$c}&m={$m}&{$p}";

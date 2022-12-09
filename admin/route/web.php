@@ -18,11 +18,12 @@
     $nameController = "{$c}Controller"; // chính la tên file
     $fileController = "{$c}Controller.php";
     // full path file controller 
-    $fullPathController = ADMIN_NAMESPACE_CONTROLLER.$fileController;
+    $fullPathController = NAMESPACE_CONTROLLER.$fileController;
     
     $fullRealPath = str_replace("\\" , "/", $fullPathController);
     if(file_exists($fullRealPath))
     {
+        
     // tự động khởi tạo đối tượng 
         $controller =  ADMIN_NAMESPACE_CONTROLLER.$nameController;
         // echo $controller;
